@@ -143,22 +143,48 @@ list(hidr.loc[[0,1,2,3,5,8,9,10],'Memória de cálculo'])#valor de 2020
 list(hidr.loc[[0,1,2,3,5,8,9,10],'Informações complementares'])#apenas o 8
 list(hidr.loc[[0,1,2,3,5,8,9,10],'Informação para relatório legal'])
 
-
+list(hidr.loc[[10],'Memória de cálculo'])#valor de 2020
 hidr.loc[[0,1,2,3,5,8,9,10],'Apuração 2020']
 hidr.loc[[10],'Apuração 2020']=29.24
 
 list(hidr.loc[[3],'Memória de cálculo'])#valor de 2020
 hidr.loc[[3],'Apuração 2020']=((1164887*0.711408269636008*2.99482018837047)/(3471239))*100
 
+list(hidr.loc[[8],'Ano de referência'])#valor de 2020
+list(hidr.loc[[8],'Memória de cálculo'])#valor de 2020
+hidr.loc[[8],'Apuração 2020']=71.50
+
+
+list(hidr.loc[[9],'Ano de referência'])#valor de 2020
+list(hidr.loc[[9],'Memória de cálculo'])#valor de 2020
+hidr.loc[[9],'Apuração 2020']=7.6
+
+
+###################################################
+#Gestao governamental
+
+ba['315']#gestao
+
+ges=ba['315']
+ges.columns.values
+
+#Valores
+ges.loc[:,'Apuração 2020']
+ges.loc[:,'Valor de referência']
+
 ##########################################33
 #Salvando excel corrigido
-# Create a Pandas Excel writer using XlsxWriter as the engine.
-writer = pd.ExcelWriter('pandas_multiple.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('Indicadores_Para_Pente_Fino_Revisados.xlsx', engine='xlsxwriter')
 
 # Write each dataframe to a different worksheet.
-df1.to_excel(writer, sheet_name='Sheet1')
-df2.to_excel(writer, sheet_name='Sheet2')
-df3.to_excel(writer, sheet_name='Sheet3')
+ct.to_excel(writer, sheet_name='301')
+cult.to_excel(writer, sheet_name='302')
+des.to_excel(writer, sheet_name='303')
+desr.to_excel(writer, sheet_name='304')
+infr.to_excel(writer, sheet_name='309')
+sus.to_excel(writer, sheet_name='310')
+hidr.to_excel(writer, sheet_name='312')
+ges.to_excel(writer, sheet_name='315')
 
 # Close the Pandas Excel writer and output the Excel file.
 writer.save()
