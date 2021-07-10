@@ -56,18 +56,8 @@ geral.set(xlabel='Sugestão', ylabel='',title='Situação dos indicadores revisa
 # Some random data
 ncount = len(ppa_ind)
 
-# Make twin axis
-#ax2=geral.twinx()
-
-# Switch so count axis is on right, frequency on left
-#ax2.yaxis.tick_left()
-#geral.yaxis.tick_right()
-
 # Also switch the labels over
 geral.yaxis.set_label_position('right')
-#ax2.yaxis.set_label_position('left')
-
-#ax2.set_ylabel('[%]')
 
 for p in geral.patches:
     x=p.get_bbox().get_points()[:,0]
@@ -75,15 +65,6 @@ for p in geral.patches:
     geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y), 
             ha='center', va='bottom') # set the alignment of the text
 
-# Fix the frequency range to 0-100
-#ax2.set_ylim(0,100)
-#geral.set_ylim(0,ncount)
-
-# And use a MultipleLocator to ensure a tick spacing of 10
-#ax2.yaxis.set_major_locator(ticker.MultipleLocator(10))
-
-# Need to turn the grid on ax2 off, otherwise the gridlines end up on top of the bars
-#ax2.grid(None)
 
 for p in geral.patches:
     geral.annotate(f'\n{p.get_height()}', (p.get_x()+0.25, p.get_height()+1), ha='center', va='top', color='white', size=18)
@@ -92,5 +73,15 @@ for p in geral.patches:
 geral.fig.set_size_inches(15,15)
 sns.despine(geral,left=True)
 
-
 plt.show(geral)
+#################################
+
+ppa_ind.columns.values
+
+ppa_ind['Situação da Reunião Setorial']=ppa_ind.loc[:,'Síntese Reunião Setorial'].isnull()
+
+ppa_ind.loc[:,'Situação da Reunião Setorial']
+
+#situação das reuniões setoriais
+ppa_ind=ppa_ind.replace({'Situação da Reunião Setorial': {True:'Não Houve Reunião', False:'Houve Reunião'}})
+        
