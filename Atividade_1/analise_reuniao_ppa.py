@@ -1,4 +1,6 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 #lendo excel sem queries
 ba = pd.ExcelFile('C:/Users/Usuário/Desktop/quantities/Indicadores para pente fino_29-06-2021.xlsx')
@@ -42,3 +44,9 @@ ppa_ind.columns.values
 ppa_ind.loc[:,'Sugestão (manter/alterar/substituir)']
 
 ppa_ind=ppa_ind.fillna({'Sugestão (manter/alterar/substituir)': 'Sem Sugestão'})
+
+# count plot on single categorical variable
+sns.countplot(x ='Sugestão (manter/alterar/substituir)', data = ppa_ind)
+ 
+# Show the plot
+plt.show()
