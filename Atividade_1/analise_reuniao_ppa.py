@@ -46,7 +46,8 @@ ppa_ind.loc[:,'Sugestão (manter/alterar/substituir)']
 ppa_ind=ppa_ind.fillna({'Sugestão (manter/alterar/substituir)': 'Sem Sugestão'})
 
 # count plot on single categorical variable
-sns.countplot(x ='Sugestão (manter/alterar/substituir)', data = ppa_ind)
+geral=sns.countplot(x ='Sugestão (manter/alterar/substituir)', data = ppa_ind)
+geral.set(xlabel='Sugestão', ylabel='',title='Sugestão')
  
 # Show the plot
-plt.show()
+plt.show(geral)
