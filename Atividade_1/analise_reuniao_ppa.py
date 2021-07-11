@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.ticker as ticker
-
+import plotly.graph_objects as go
 
 #lendo excel sem queries
 ba = pd.ExcelFile('C:/Users/Usuário/Desktop/quantities/Indicadores para pente fino_29-06-2021.xlsx')
@@ -101,4 +101,33 @@ reuger.set(xlabel='', ylabel='',title='Situação da Reunião Setorial para disc
 ################
 
 #Filtrando falta de reuniao pegar os indices
+sem_reuniao_ppa=ppa_ind[ppa_ind['Situação da Reunião Setorial']=='Reunião Não Registrada']
 
+
+# count plot on single categorical variable
+geral=sns.countplot(x ='Sugestão (manter/alterar/substituir)', data = sem_reuniao_ppa)
+geral.set(xlabel='Sugestão', ylabel='',title='Situação dos Indicadores Sem Reunião Setorial Registrada')
+ 
+# Show the plot
+# Some random data
+ncount = len(sem_reuniao_ppa)
+
+# Also switch the labels over
+geral.yaxis.set_label_position('right')
+
+for p in geral.patches:
+    x=p.get_bbox().get_points()[:,0]
+    y=p.get_bbox().get_points()[1,1]
+    geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y), 
+            ha='center', va='bottom') # set the alignment of the text
+
+
+for p in geral.patches:
+    geral.annotate(f'\n{p.get_height()}', (p.get_x()+0.25, p.get_height()+0.4), ha='center', va='top', color='white', size=18)
+
+#geral.set_size_inches( 16, 10)
+geral.fig.set_size_inches(15,15)
+sns.despine(geral,left=True)
+
+plt.show(geral)
+#################################
