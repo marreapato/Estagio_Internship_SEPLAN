@@ -70,8 +70,6 @@ for p in geral.patches:
     geral.annotate(f'\n{p.get_height()}', (p.get_x()+0.25, p.get_height()+1), ha='center', va='top', color='white', size=18)
 
 #geral.set_size_inches( 16, 10)
-geral.fig.set_size_inches(15,15)
-sns.despine(geral,left=True)
 
 plt.show(geral)
 #################################
@@ -97,7 +95,7 @@ def autopct_format(values):
 
 reuger=ppa_ind['Situação da Reunião Setorial'].value_counts().plot(kind='pie', autopct = autopct_format(ppa_ind['Situação da Reunião Setorial'].value_counts()),shadow=True)
 reuger.set(xlabel='', ylabel='',title='Situação da Reunião Setorial para discussão dos índices.')
-
+plt.show(reuger)
 ################
 
 #Filtrando falta de reuniao pegar os indices
