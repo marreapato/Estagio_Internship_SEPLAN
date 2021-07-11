@@ -84,4 +84,10 @@ ppa_ind.loc[:,'Situação da Reunião Setorial']
 
 #situação das reuniões setoriais
 ppa_ind=ppa_ind.replace({'Situação da Reunião Setorial': {True:'Não Houve Reunião', False:'Houve Reunião'}})
-        
+
+#contando
+ppa_ind['Situação da Reunião Setorial'].value_counts()
+
+reuger=ppa_ind['Situação da Reunião Setorial'].value_counts().plot(kind='pie', autopct='%1.1f%%',shadow=True)
+reuger.set(xlabel='', ylabel='',title='Situação da Reunião Setorial para os índices.')
+
