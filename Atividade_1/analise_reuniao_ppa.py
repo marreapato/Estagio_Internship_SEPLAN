@@ -129,3 +129,34 @@ sns.despine(geral,left=True)
 
 plt.show(geral)
 #################################
+sem_reuniao_ppa.columns
+# count plot on single categorical variable
+geral=sns.countplot(x ='Programa', data = sem_reuniao_ppa)
+geral.set(xlabel='Programa', ylabel='',title='Programa dos Indicadores Com Reunião Não Registrada')
+
+geral.set_xticklabels(geral.get_xticklabels(),rotation=40, ha="right")
+#plt.tight_layout()
+#plt.show()
+
+# Show the plot
+# Some random data
+ncount = len(sem_reuniao_ppa)
+
+# Also switch the labels over
+geral.yaxis.set_label_position('right')
+
+for p in geral.patches:
+    x=p.get_bbox().get_points()[:,0]
+    y=p.get_bbox().get_points()[1,1]
+    geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y), 
+            ha='center', va='bottom') # set the alignment of the text
+
+
+for p in geral.patches:
+    geral.annotate(f'\n{p.get_height()}', (p.get_x()+0.25, p.get_height()+0.3), ha='center', va='top', color='white', size=10)
+
+#geral.set_size_inches( 16, 10)
+geral.fig.set_size_inches(15,15)
+sns.despine(geral,left=True)
+
+plt.show(geral)
