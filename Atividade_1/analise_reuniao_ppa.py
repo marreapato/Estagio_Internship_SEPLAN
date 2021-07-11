@@ -161,7 +161,7 @@ sns.despine(geral,left=True)
 
 plt.show(geral)
 
-#tabela para o power bi
+#tabela para grafico no tableau
 
 table=sem_reuniao_ppa.loc[:,['Programa','Descrição do Indicador','Sugestão (manter/alterar/substituir)']]
 
