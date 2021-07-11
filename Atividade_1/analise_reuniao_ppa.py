@@ -83,7 +83,7 @@ ppa_ind['Situação da Reunião Setorial']=ppa_ind.loc[:,'Síntese Reunião Seto
 ppa_ind.loc[:,'Situação da Reunião Setorial']
 
 #situação das reuniões setoriais
-ppa_ind=ppa_ind.replace({'Situação da Reunião Setorial': {True:'Não Houve Reunião', False:'Houve Reunião'}})
+ppa_ind=ppa_ind.replace({'Situação da Reunião Setorial': {True:'Reunião Não Registrada', False:'Houve Reunião'}})
 
 #contando criando pie plot
 ppa_ind['Situação da Reunião Setorial'].value_counts()
@@ -97,3 +97,8 @@ def autopct_format(values):
 
 reuger=ppa_ind['Situação da Reunião Setorial'].value_counts().plot(kind='pie', autopct = autopct_format(ppa_ind['Situação da Reunião Setorial'].value_counts()),shadow=True)
 reuger.set(xlabel='', ylabel='',title='Situação da Reunião Setorial para discussão dos índices.')
+
+################
+
+#Filtrando falta de reuniao pegar os indices
+
