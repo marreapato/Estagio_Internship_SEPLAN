@@ -160,3 +160,15 @@ geral.fig.set_size_inches(15,15)
 sns.despine(geral,left=True)
 
 plt.show(geral)
+
+#tabela para o power bi
+
+table=sem_reuniao_ppa.loc[:,['Programa','Descrição do Indicador','Sugestão (manter/alterar/substituir)']]
+
+writer = pd.ExcelWriter('Indicadores_Para_Pente_Fino_semreuniao.xlsx', engine='xlsxwriter')
+
+# Write each dataframe to a different worksheet.
+table.to_excel(writer, sheet_name='table')
+
+# Close the Pandas Excel writer and output the Excel file.
+writer.save()
