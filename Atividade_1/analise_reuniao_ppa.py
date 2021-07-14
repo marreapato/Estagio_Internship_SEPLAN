@@ -3,16 +3,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import matplotlib.ticker as ticker
-import plotly.graph_objects as go
 import plotly.express as px
 import plotly.io as pio
-
 from plotly.offline import plot
-import plotly.graph_objects as go
-
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
 
 #lendo excel sem queries
-ba = pd.ExcelFile("C:/Users/csferreira/Desktop/Indicadores para pente fino_29-06-2021.xlsx")
+ba = pd.ExcelFile("C:/Users/atsilva/Downloads/Indicadores para pente fino_29-06-2021.xlsx")
 #indicadores:
    
 #ciencia e tecnologia
@@ -201,3 +200,39 @@ fig.update_layout(margin = dict(t=50, l=25, r=25, b=25),uniformtext_minsize=64)
 ##################
 
 plot(fig)
+
+#Aplicativo dash
+#teste para futuramente fazer um app dash
+
+# initiate dataframe
+df = table
+
+# -*- coding: utf-8 -*-
+
+#
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
+# assume you have a "long-form" data frame
+fig = px.treemap(df, path=['Programa','Sugestão (manter/alterar/substituir)','Descrição do Indicador'],template="seaborn",title="Sugestão e Indicadores Sem Reunião Registrada",
+    labels=dict(labels="Analisando", parent="Informação Complementar", count="Quantidade"))
+fig.update_traces(root_color="lightgrey")
+fig.update_layout(margin = dict(t=50, l=25, r=25, b=25),uniformtext_minsize=64)
+#ig.show()
+
+app.layout = html.Div(children=[
+    html.H1(children='Reuniões Seplan'),
+
+    html.Div(children='''
+        Uma Aplicação no Dash.
+    '''),
+
+    dcc.Graph(
+        id='example-graph',
+        figure=fig
+    )
+])
+
+if __name__ == '__main__':
+    app.run_server()
