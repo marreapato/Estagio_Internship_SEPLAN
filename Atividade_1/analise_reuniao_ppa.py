@@ -179,3 +179,25 @@ fig.update_layout(margin = dict(t=50, l=25, r=25, b=25),uniformtext_minsize=64)
 ##################
 
 plot(fig)
+
+
+#Alternativamente com polaridade
+
+
+
+#tabela para grafico no tableau
+
+table=sem_reuniao_ppa.loc[:,['Programa','Descrição do Indicador','Sugestão (manter/alterar/substituir)','Polaridade']]
+
+#pio.renderers.default='browser'
+#plotly treemap
+
+#para um futuro dash app
+fig = px.treemap(table, path=['Programa','Sugestão (manter/alterar/substituir)','Descrição do Indicador','Polaridade'],template="seaborn",title="Sugestão e Indicadores Sem Reunião Registrada",
+    labels=dict(labels="Analisando", parent="Informação Complementar", count="Quantidade"))
+fig.update_traces(root_color="lightgrey")
+fig.update_layout(margin = dict(t=50, l=25, r=25, b=25),uniformtext_minsize=64)
+#ig.show()
+##################
+
+plot(fig)
