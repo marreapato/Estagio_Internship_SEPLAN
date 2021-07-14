@@ -1,22 +1,24 @@
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 import matplotlib.ticker as ticker
 import plotly.graph_objects as go
+import plotly.express as px
+import plotly.io as pio
+
+from plotly.offline import plot
+import plotly.graph_objects as go
+
 
 #lendo excel sem queries
-ba = pd.ExcelFile('C:/Users/Usuário/Desktop/quantities/Indicadores para pente fino_29-06-2021.xlsx')
-
-#xlsx = pd.read_excel('C:/Users/Usuário/Desktop/quantities/Indicadores para pente fino_29-06-2021.xlsx',sheet_name=None)
-#Segundo Query olhar depois
-
+ba = pd.ExcelFile("C:/Users/csferreira/Desktop/Indicadores para pente fino_29-06-2021.xlsx")
 #indicadores:
-    
-#ciencia e tecnologia 
+   
+#ciencia e tecnologia
 ct=pd.read_excel(ba,'301')#ciencia e tecnologia
 
-#cultura 
+#cultura
 cult=pd.read_excel(ba,'302')#cultura
 
 #desenvolvimento produtivo
@@ -62,7 +64,7 @@ geral.yaxis.set_label_position('right')
 for p in geral.patches:
     x=p.get_bbox().get_points()[:,0]
     y=p.get_bbox().get_points()[1,1]
-    geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y), 
+    geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y),
             ha='center', va='bottom') # set the alignment of the text
 
 
@@ -116,7 +118,7 @@ geral.yaxis.set_label_position('right')
 for p in geral.patches:
     x=p.get_bbox().get_points()[:,0]
     y=p.get_bbox().get_points()[1,1]
-    geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y), 
+    geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y),
             ha='center', va='bottom') # set the alignment of the text
 
 
@@ -148,7 +150,7 @@ geral.yaxis.set_label_position('right')
 for p in geral.patches:
     x=p.get_bbox().get_points()[:,0]
     y=p.get_bbox().get_points()[1,1]
-    geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y), 
+    geral.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y),
             ha='center', va='bottom') # set the alignment of the text
 
 
@@ -165,10 +167,15 @@ plt.show(geral)
 
 table=sem_reuniao_ppa.loc[:,['Programa','Descrição do Indicador','Sugestão (manter/alterar/substituir)']]
 
-writer = pd.ExcelWriter('Indicadores_Para_Pente_Fino_semreuniao.xlsx', engine='xlsxwriter')
+#pio.renderers.default='browser'
+#plotly treemap
 
-# Write each dataframe to a different worksheet.
-table.to_excel(writer, sheet_name='table')
+#para um futuro dash app
+fig = px.treemap(table, path=['Programa','Sugestão (manter/alterar/substituir)','Descrição do Indicador'],template="seaborn",title="Sugestão e Indicadores Sem Reunião Registrada",
+    labels=dict(labels="Analisando", parent="Informação Complementar", count="Quantidade"))
+fig.update_traces(root_color="lightgrey")
+fig.update_layout(margin = dict(t=50, l=25, r=25, b=25),uniformtext_minsize=64)
+#ig.show()
+##################
 
-# Close the Pandas Excel writer and output the Excel file.
-writer.save()
+plot(fig)
