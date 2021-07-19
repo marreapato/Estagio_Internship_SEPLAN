@@ -167,7 +167,44 @@ if st.sidebar.checkbox('Exploração Breve Da Base'):
         st.subheader('Breve Exploração dos Dados:')
         st.write(df.head())
 
+#############
 
+#visualizacao de dados parte do painel lateral
+
+st.title('Escolha Um Gráfico')
+st.markdown("Marque uma das opções para disponibilizar a visualização.")
+st.sidebar.subheader('Criando Gráficos')
+if st.sidebar.checkbox('Gráficos'):
+    if st.sidebar.checkbox('Gráfico de Barras - Contagem'):
+        st.subheader('Gráfico de Barras')
+        st.info("Caso Haja Erro por favor ajuste o nome no painel.")
+        column_count_plot = st.sidebar.selectbox("Escolha uma coluna para visualizar. Tente Selecionar Programa",df.columns)
+        hue_opt = st.sidebar.selectbox("Variáveis Categóricas Opcionais. Tente Selecionar Sugestão",df.columns.insert(0,None))
+        
+        fig = sns.countplot(x=column_count_plot,data=df,hue=hue_opt)
+        st.pyplot()
+            
+            
+    if st.sidebar.checkbox('Histograma'):
+        st.subheader('Histograma')
+        st.info("Caso Haja Erro Favor ajuste o nome da coluna no painel.")
+        # if st.checkbox('Dist plot'):
+        column_dist_plot = st.sidebar.selectbox("Tente Selecionar o valor de referência",df.columns)
+        fig = sns.distplot(df[column_dist_plot])
+        st.pyplot()
+            
+            
+ 
+        
+   # if st.sidebar.checkbox('Boxplot'):
+       # st.subheader('Boxplot')
+       # st.info("If error, please adjust column name on side panel.")
+       # column_box_plot_X = st.sidebar.selectbox("X (Choose a column). Try Selecting island:",df.columns.insert(0,None))
+       # column_box_plot_Y = st.sidebar.selectbox("Y (Choose a column - only numerical). Try Selecting Body Mass",df.columns)
+       # hue_box_opt = st.sidebar.selectbox("Optional categorical variables (boxplot hue)",df.columns.insert(0,None))
+        # if st.checkbox('Plot Boxplot'):
+       # fig = sns.boxplot(x=column_box_plot_X, y=column_box_plot_Y,data=df,palette="Set3")
+       # st.pyplot()
 
 
 
