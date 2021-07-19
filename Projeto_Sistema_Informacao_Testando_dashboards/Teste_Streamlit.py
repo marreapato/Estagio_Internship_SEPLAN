@@ -107,7 +107,31 @@ st.info("O plano PluriAnual é Realizado de 4 em 4 anos e contém informações 
 img=Image.open(r'C:\Users\atsilva\Desktop\nucleo_territorial_educacao_2018.jpg')
 st.image(img,width=700,caption = "fonte: SEI - Superintendência de Estudos Econômicos e Sociais da Bahia (https://www.sei.ba.gov.br/index.php?option=com_content&view=category&id=1500&Itemid=101)")
 
+##################################################################################################
 
+#Painel lateral
+
+st.sidebar.markdown("## Side Panel")
+st.sidebar.markdown("Use this panel to explore the dataset and create own viz.")
+
+#df = pd.read_csv(DATA_URL, nrows = nrows)
+ #   lowercase = lambda x:str(x).lower()
+  #  df.rename(lowercase, axis='columns',inplace=True)
+   # return df
+
+st.header("Now, Explore Yourself the Palmer Penguins")
+
+# Create a text element and let the reader know the data is loading.
+data_load_state = st.text('Loading palmerpenguins dataset...')
+    # Load 10,000 rows of data into the dataframe.
+#df = load_data(100000)
+    # Notify the reader that the data was successfully loaded.
+
+data_load_state.text('Loading palmerpenguins dataset...Completed!')
+
+images=Image.open('images/meet.png')
+
+st.image(images,width=600)
 
 
 
