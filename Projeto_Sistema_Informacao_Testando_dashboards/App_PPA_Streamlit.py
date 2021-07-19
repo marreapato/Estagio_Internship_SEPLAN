@@ -122,20 +122,44 @@ st.sidebar.markdown("Use esse painel para explorar o app e criar interações.")
 st.header("Explore a Base de dados do PPA revisado")
 
 # Create a text element and let the reader know the data is loading.
-data_load_state = st.text('Baixando Base de dados do PPA...')
+data_load_state = st.text('Baixando Base de dados do PPA do Programa de Gestão Governamental...')
     # Load 10,000 rows of data into the dataframe.
+ges
 df = ppa_ind
-df
+
 # Notify the reader that the data was successfully loaded.
 
-data_load_state.text('Baixando base de dados do PPA...Completo!')
+data_load_state.text('Baixando base de dados do PPA do Programa de Gestão Governamental...Completo!')
 
 images=Image.open(r'C:\Users\atsilva\Desktop\new.jpeg')
 
 st.image(images,width=200)
 
 
+##################################################
+#interação painel lateral check box
 
+if st.checkbox("Mostrar Todos Os Dados de todos os Programas", False):
+    st.subheader('Todos Os Dados')
+    st.write(df)
+st.title('Explorando...')
+st.sidebar.subheader(' Exploração Breve')
+st.markdown("Marque a caixinha no painel lateral para explorar os dados.")
+if st.sidebar.checkbox('Informação Básica'):
+    if st.sidebar.checkbox('Breve exploração da base'):
+        st.subheader('Exploração Breve:')
+        st.write(df.head())
+    if st.sidebar.checkbox("Mostrar Colunas"):
+        st.subheader('Mostrar Lista de Colunas')
+        all_columns = df.columns.to_list()
+        st.write(all_columns)
+   
+    if st.sidebar.checkbox('Descrição Estatística'):
+        st.subheader('Dados da Descrição Estatística')
+        st.write(df.describe())
+    if st.sidebar.checkbox('Valores Faltantes?'):
+        st.subheader('Valores Faltantes')
+        st.write(df.isnull().sum())
 
 
 
