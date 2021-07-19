@@ -75,9 +75,9 @@ sem_reuniao_ppa=ppa_ind[ppa_ind['Situação da Reunião Setorial']=='Reunião N�
 
 # Parte Inicial
 
-st.markdown("# Aplicativo de teste com o Streamlit")
+st.markdown("# Aplicativo Para Apresentação dos Programas do PPA 2020-2023")
 
-st.markdown("Explore as informações referentes aos indicadores revisados do PPA")
+st.markdown("Explore as informações referentes aos programas incluídos no PPA")
 
 #Image.open(r'C:\Users\atsilva\Desktop\logo_seplan.png').convert('RGB').save('new.jpeg')
 
@@ -85,10 +85,9 @@ img=Image.open(r'C:\Users\atsilva\Desktop\Seplan-BA.jpg')
 
 st.image(img,width=674)
 
-st.markdown("**PPA** São Informações do Plano Pluri-Anual do Estado da Bahia, referente ao planejamento do estado da Bahia.")
+st.markdown("**PPA** São Informações do Plano PluriAnual do Estado da Bahia, referente ao planejamento do estado da Bahia.")
 
-st.markdown("Informações da Situação do PPA")
-
+st.markdown("Informações dos Programas do PPA")
 
 #Parte interativa
 
