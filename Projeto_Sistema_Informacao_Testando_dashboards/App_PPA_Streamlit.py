@@ -217,6 +217,3 @@ st.sidebar.text("Feito com Streamlit - Python")
 
 
 
-
-
-
