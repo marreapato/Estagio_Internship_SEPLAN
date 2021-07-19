@@ -146,9 +146,9 @@ st.title('Explorando...')
 st.sidebar.subheader(' Exploração Breve')
 st.markdown("Marque a caixinha no painel lateral para explorar os dados.")
 if st.sidebar.checkbox('Informação Básica'):
-    if st.sidebar.checkbox('Breve exploração da base'):
-        st.subheader('Exploração Breve:')
-        st.write(df.head())
+    #if st.sidebar.checkbox('Breve exploração da base'):
+        #st.subheader('Exploração Breve:')
+       # st.write(df.head())
     if st.sidebar.checkbox("Mostrar Colunas"):
         st.subheader('Mostrar Lista de Colunas')
         all_columns = df.columns.to_list()
@@ -163,7 +163,9 @@ if st.sidebar.checkbox('Informação Básica'):
 
 
 
-
+if st.sidebar.checkbox('Exploração Breve Da Base'):
+        st.subheader('Breve Exploração dos Dados:')
+        st.write(df.head())
 
 
 
