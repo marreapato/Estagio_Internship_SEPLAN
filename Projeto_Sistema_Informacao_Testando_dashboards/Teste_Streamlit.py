@@ -111,7 +111,7 @@ st.image(img,width=700,caption = "fonte: SEI - Superintendência de Estudos Econ
 
 #Painel lateral
 
-st.sidebar.markdown("## Side Panel")
+st.sidebar.markdown("## Painel Lateral")
 st.sidebar.markdown("Use esse painel para explorar o app e criar interações.")
 
 #df = pd.read_csv(DATA_URL, nrows = nrows)
