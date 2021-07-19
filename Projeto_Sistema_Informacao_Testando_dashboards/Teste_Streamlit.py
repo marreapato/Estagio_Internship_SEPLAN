@@ -11,9 +11,6 @@ from PIL import Image
 #streamlit run C:\Users\atsilva\Desktop\app.py
 
 
-
-
-
 ########################################################################
 
 # Processamento Dados
@@ -76,7 +73,6 @@ sem_reuniao_ppa=ppa_ind[ppa_ind['Situação da Reunião Setorial']=='Reunião N�
 ###############################################################################
 
 
-
 # Parte Inicial
 
 st.markdown("# Aplicativo de teste com o Streamlit")
@@ -93,6 +89,19 @@ st.markdown("**PPA** São Informações do Plano Pluri-Anual do Estado da Bahia,
 
 st.markdown("Informações da Situação do PPA")
 
+
+#Parte interativa
+
+if st.button("Conheça os Programas da Seplan BA"):
+    img=Image.open(r'C:\Users\atsilva\Desktop\Programas_PPA.jpg')
+    st.image(img,width=700, caption="Programas do PPA 2020-2023")
+    #images=Image.open(r'C:\Users\atsilva\Desktop\new.jpeg')
+  #  st.image(images,width=600)
+    #Ballons
+    #st.balloons()
+    
+st.markdown(
+    "Os dados são provenientes da [Seplan-BA](http://www.seplan.ba.gov.br/arquivos/File/ppa/PPA2020_2023/05PPA_2020-2023_Publicado-TABELAS_RECURSOS_E_INDICADORES.pdf)")
 
 
 
