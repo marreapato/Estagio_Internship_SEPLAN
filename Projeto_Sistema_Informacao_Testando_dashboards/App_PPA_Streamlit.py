@@ -185,13 +185,13 @@ if st.sidebar.checkbox('Gráficos'):
         st.pyplot()
             
             
-    if st.sidebar.checkbox('Histograma'):
-        st.subheader('Histograma')
-        st.info("Caso Haja Erro Favor ajuste o nome da coluna no painel.")
+    #if st.sidebar.checkbox('Histograma'):
+      #  st.subheader('Histograma')
+       # st.info("Caso Haja Erro Favor ajuste o nome da coluna no painel.")
         # if st.checkbox('Dist plot'):
-        column_dist_plot = st.sidebar.selectbox("Tente Selecionar o valor de referência",df.columns)
-        fig = sns.distplot(df[column_dist_plot])
-        st.pyplot()
+       # column_dist_plot = st.sidebar.selectbox("Tente Selecionar o valor de referência",df.columns)
+      #  fig = sns.distplot(df[column_dist_plot])
+       # st.pyplot()
             
             
  
