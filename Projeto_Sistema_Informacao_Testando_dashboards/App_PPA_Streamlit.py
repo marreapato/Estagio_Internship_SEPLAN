@@ -119,19 +119,37 @@ st.sidebar.markdown("Use esse painel para explorar o app e criar interações.")
   #  df.rename(lowercase, axis='columns',inplace=True)
    # return df
 
-st.header("Explore o Banco de dados do PPA revisado")
+st.header("Explore a Base de dados do PPA revisado")
 
 # Create a text element and let the reader know the data is loading.
-#data_load_state = st.text('Loading palmerpenguins dataset...')
+data_load_state = st.text('Baixando Base de dados do PPA...')
     # Load 10,000 rows of data into the dataframe.
-#df = load_data(100000)
-    # Notify the reader that the data was successfully loaded.
+df = ppa_ind
+df
+# Notify the reader that the data was successfully loaded.
 
-#data_load_state.text('Loading palmerpenguins dataset...Completed!')
+data_load_state.text('Baixando base de dados do PPA...Completo!')
 
 images=Image.open(r'C:\Users\atsilva\Desktop\new.jpeg')
 
 st.image(images,width=200)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
