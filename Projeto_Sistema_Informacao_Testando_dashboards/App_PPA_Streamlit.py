@@ -208,7 +208,10 @@ if st.sidebar.checkbox('Gráficos'):
 
 
 
-
+st.sidebar.markdown("[Fonte de Dados](https://seplan.ba.gov.br/)")
+st.sidebar.info(" [Mais informações sobre o PPA](https://seplan.ba.gov.br/modules/conteudo/conteudo.php?conteudo=100)")
+st.sidebar.info("Projeto feito por [Lucas Rabelo](https://github.com/marreapato) ")
+st.sidebar.text("Feito com Streamlit - Python")
 
 
 
