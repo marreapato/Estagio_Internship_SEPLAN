@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 import matplotlib
 from PIL import Image
 
-#streamlit run C:\Users\atsilva\Desktop\app.py
 
+#streamlit run C:\Users\atsilva\Desktop\app.py
 
 ########################################################################
 
@@ -103,7 +103,9 @@ st.markdown(
     "Os dados são provenientes da [Seplan-BA](http://www.seplan.ba.gov.br/arquivos/File/ppa/PPA2020_2023/05PPA_2020-2023_Publicado-TABELAS_RECURSOS_E_INDICADORES.pdf)")
 
 
-
+st.info("O plano PluriAnual é Realizado de 4 em 4 anos e contém informações referente ao desenvolvimento de todo o estado da Bahia.")
+img=Image.open(r'C:\Users\atsilva\Desktop\nucleo_territorial_educacao_2018.jpg')
+st.image(img,width=700,caption = "fonte: SEI - Superintendência de Estudos Econômicos e Sociais da Bahia (https://www.sei.ba.gov.br/index.php?option=com_content&view=category&id=1500&Itemid=101)")
 
 
 
