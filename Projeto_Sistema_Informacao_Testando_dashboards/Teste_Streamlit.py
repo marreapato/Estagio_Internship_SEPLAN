@@ -112,7 +112,7 @@ st.image(img,width=700,caption = "fonte: SEI - Superintendência de Estudos Econ
 #Painel lateral
 
 st.sidebar.markdown("## Side Panel")
-st.sidebar.markdown("Use this panel to explore the dataset and create own viz.")
+st.sidebar.markdown("Use esse painel para explorar o app e criar interações.")
 
 #df = pd.read_csv(DATA_URL, nrows = nrows)
  #   lowercase = lambda x:str(x).lower()
