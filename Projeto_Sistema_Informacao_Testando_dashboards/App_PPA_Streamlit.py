@@ -139,7 +139,7 @@ st.image(images,width=200)
 ##################################################
 #interação painel lateral check box
 
-if st.checkbox("Mostrar Todos Os Dados de todos os Programas", False):
+if st.checkbox("Mostrar Todos Os Dados de todos os Programas íncluidos no DPE", False):
     st.subheader('Todos Os Dados')
     st.write(df)
 st.title('Explorando...')
@@ -154,7 +154,7 @@ if st.sidebar.checkbox('Informação Básica'):
         all_columns = df.columns.to_list()
         st.write(all_columns)
    
-    if st.sidebar.checkbox('Descrição Estatística'):
+    if st.sidebar.checkbox('Descrição Estatística (Apenas Para Vias de Demonstração)'):
         st.subheader('Dados da Descrição Estatística')
         st.write(df.describe())
     if st.sidebar.checkbox('Valores Faltantes?'):
@@ -212,6 +212,9 @@ st.sidebar.markdown("[Fonte de Dados](https://seplan.ba.gov.br/)")
 st.sidebar.info(" [Mais informações sobre o PPA](https://seplan.ba.gov.br/modules/conteudo/conteudo.php?conteudo=100)")
 st.sidebar.info("Projeto feito por [Lucas Rabelo](https://github.com/marreapato) ")
 st.sidebar.text("Feito com Streamlit - Python")
+
+
+
 
 
 
