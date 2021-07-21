@@ -18,5 +18,5 @@
       - App built with Python and its Streamlit package to briefly inform about the PPA 2020-2023 (PluriAnual Plan) and to make it easy to build graphs and to evaluate the situation of the reviewed indicators of the PPA 2020-2023, and to give easy access to the DPE's database [App's link](https://seplanba-informini.herokuapp.com/) and [Repo Link](https://github.com/marreapato/SeplanBA-Informini).
    
     - Project: Data and Information was gathered to create a unified database to facilitate the access to information of indicators and long term development of the state of Bahia.
-      - One of the sources with date range between 2020/2021 was the Brazilian Magazine [Terra Mãe](https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web), made available the government of the state of Bahia.
+      - One of the sources with date range between 2020/2021 was the Brazilian Magazine [Terra Mãe](https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web), made available by the government of the state of Bahia.
  
