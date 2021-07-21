@@ -13,3 +13,7 @@
  - Repository containing all Projects built in my internship at SEPLAN(BA) - Secretary Of Planning Of The State Of Bahia
       - Project: Descriptive Summary and Analysis of the DPE's Reviewed Database of indicators of the PluriAnual Plan (goals to achieve in 4 years).
         - A few modifications in the database were made with Python, Excel was initially used but it wasn't the main tool, so it wan't necessary to keep them, going back to the original database to work in a descriptive analysis with Python, Tableau and Power Point. Later the indicators with pending reunion were collected, resulting in a .html file product with a treemap interactive graph built with Python's library Plotly.
+    
+    - Project: Web Descriptive App of the Web DPE's Reviewed Database of indicators of the PluriAnual Plan
+      - App built with Python and its Streamlit package to briefly inform about the PPA 2020-2023 (PluriAnual Plan) and to make it easy to build graphs and to evaluate the situation of the reviewed indicators of the PPA 2020-2023, and to give easy access to the DPE's database. [Link do App](https://seplanba-informini.herokuapp.com/) and [Link do Repositório](https://github.com/marreapato/SeplanBA-Informini)
+   
