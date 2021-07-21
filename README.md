@@ -11,5 +11,5 @@
       - Uma das fontes utilizadas em 2020/2021 sendo a [Revista Terra Mãe](https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web)
  
  - Repository containing all Projects built in my internship at SEPLAN(BA) - Secretary Of Planning Of The State Of Bahia
-      - Atividade: Resumo Descritivo e Análise da Base de Dados Revisada dos índices Plano PluriAnual
+      - Project: Descriptive Summary and Analysis of the DPE's Reviewed Database of indicators of the PluriAnual Plan (goals to achieve in 4 years).
         - A few modifications in the database were made with Python, Excel was initially used but it wasn't the main tool, so it wan't necessary to keep them, going back to the original database to work in a descriptive analysis with Python, Tableau and Power Point. Later the indicators with pending reunion were collected, resulting in a .html file product with a treemap interactive graph built with Python's library Plotly.
