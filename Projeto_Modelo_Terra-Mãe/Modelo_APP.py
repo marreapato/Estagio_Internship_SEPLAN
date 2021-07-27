@@ -164,8 +164,8 @@ st.image(img,width=674)
 #Parte Final
 
 
-st.sidebar.markdown("[Fonte de Dados][Governo Da Bahia] Revista Terra Mãe: Guerra A Bahia Contra O Coronavírus. (2020) – Ano 6 – nº 6. Brasil: Bahia. Disponível em: https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web")
-st.sidebar.info(" [Governo Da Bahia] Revista Terra Mãe: Guerra A Bahia Contra O Coronavírus. (2020) – Ano 6 – nº 6. Brasil: Bahia. Disponível em: https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web")
+st.sidebar.markdown("[Fonte de Dados](https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web)")
+st.sidebar.info("[Seplan](http://www.seplan.ba.gov.br/)")
 st.sidebar.info("Projeto feito por [Lucas Rabelo](https://github.com/marreapato) ")
 st.sidebar.text("Feito com Streamlit - Python")
 
