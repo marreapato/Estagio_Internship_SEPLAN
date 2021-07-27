@@ -1,5 +1,12 @@
 import pandas as pd
 import numpy as np
+import streamlit as st
+import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib
+from PIL import Image
+
 
 #Criação de Dataset para a revista Terra-Mãe
 
@@ -133,6 +140,7 @@ data = {'Programa':  programa,
 'No segundo trimestre de 2020, o estado sofreu uma perda de receitas brutas estimada em R$ 1,5 bilhão em comparação ao ano passado, e a previsão de perda para o exercício alcança a expressiva soma de R$ 3 bilhões. (p. 237).',]),
         }
 
-df = pd.DataFrame (data, columns = ['Programa','Evento'])
+df = pd.DataFrame (data, columns = ['Programa','Evento','Descrição'])
 
-print (df)
+print(df)
+
