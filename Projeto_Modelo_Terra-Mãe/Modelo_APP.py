@@ -159,6 +159,31 @@ img=Image.open(r'C:\Users\lmorais\Desktop\revista_terra_mae.jpg')
 
 st.image(img,width=674)
 
+##################################################
+
+#visualizacao de dados parte do painel lateral
+
+st.title('Escolha Um Programa')
+st.markdown("Selecione uma das opções para disponibilizar a informação.")
+st.sidebar.subheader('Disponibilizando informações:')
+
+prog=st.sidebar.selectbox("Selecione um Programa",df['Programa'].unique())
+
+#Filtrando dataframe
+mask_countries = df['Programa'].isin("Gestão Governamental (pg 234)")
+
+
+data = df[mask_countries]
+
+if data.isnull()==False:
+
+    evento=st.sidebar.selectbox("Selecione um Evento",data.columns)
+
+    #Filtrando dataframe
+    mask_countries2 = data[data.Evento==evento]
+
+    st.markdown(print(df[mask_countries2]))
+
 
 
 #Parte Final
