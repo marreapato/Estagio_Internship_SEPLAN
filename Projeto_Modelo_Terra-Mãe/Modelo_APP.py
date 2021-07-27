@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 from PIL import Image
 
-#[Governo Da Bahia] Revista Terra Mãe: Guerra A Bahia Contra O Coronavírus. (2020) – Ano 6 – nº 6. Brasil: Bahia. Disponível em: https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web
+#
 
 #Criação de Dataset para a revista Terra-Mãe
 
@@ -143,5 +143,30 @@ data = {'Programa':  programa,
 
 df = pd.DataFrame (data, columns = ['Programa','Evento','Descrição'])
 
-print(df)
+################################################################################################
+
+
+
+#Parte Inicial
+
+st.markdown("# Aplicativo Modelo da Revista Terra Mãe: Guerra A Bahia Contra O Coronavírus")
+
+st.markdown("Aplicativo com Informações resumidas por programa da DPE da Revista Terra Mãe")
+
+#Image.open(r'C:\Users\atsilva\Desktop\logo_seplan.png').convert('RGB').save('new.jpeg')
+
+img=Image.open(r'C:\Users\lmorais\Desktop\logo_seplan.jpg')
+
+st.image(img,width=674)
+
+
+
+#Parte Final
+
+
+st.sidebar.markdown("[Fonte de Dados][Governo Da Bahia] Revista Terra Mãe: Guerra A Bahia Contra O Coronavírus. (2020) – Ano 6 – nº 6. Brasil: Bahia. Disponível em: https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web")
+st.sidebar.info(" [Governo Da Bahia] Revista Terra Mãe: Guerra A Bahia Contra O Coronavírus. (2020) – Ano 6 – nº 6. Brasil: Bahia. Disponível em: https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web")
+st.sidebar.info("Projeto feito por [Lucas Rabelo](https://github.com/marreapato) ")
+st.sidebar.text("Feito com Streamlit - Python")
+
 
