@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 from PIL import Image
 
+#[Governo Da Bahia] Revista Terra Mãe: Guerra A Bahia Contra O Coronavírus. (2020) – Ano 6 – nº 6. Brasil: Bahia. Disponível em: https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web
 
 #Criação de Dataset para a revista Terra-Mãe
 
