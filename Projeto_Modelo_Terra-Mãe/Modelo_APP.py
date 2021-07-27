@@ -181,6 +181,9 @@ descr = data[data.Evento==evento]
 
 st.markdown(descr['Descrição'].values)
 
+img2=Image.open(r'C:\Users\lmorais\Desktop\logo_seplan.jpg')
+
+st.image(img2,width=200)
 
 
 #Parte Final
