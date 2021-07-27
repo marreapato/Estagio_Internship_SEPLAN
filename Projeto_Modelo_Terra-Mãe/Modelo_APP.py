@@ -193,5 +193,3 @@ st.sidebar.markdown("[Fonte de Dados](https://issuu.com/abahiamudoupramim/docs/r
 st.sidebar.info("[Seplan](http://www.seplan.ba.gov.br/)")
 st.sidebar.info("Projeto feito por [Lucas Rabelo](https://github.com/marreapato) ")
 st.sidebar.text("Feito com Streamlit - Python")
-
-
