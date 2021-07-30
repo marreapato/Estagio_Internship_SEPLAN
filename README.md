@@ -10,8 +10,7 @@
     - Atividade: Coleta de dados e informações para criação de base de dados unificada, com intuito de facilitar análise dos indicadores e desenvolvimento de longo prazo do estado da Bahia.
       - Uma das fontes utilizadas em 2020/2021 sendo a [Revista Terra Mãe](https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web), em que foi desenvolvido um [aplicativo](https://revista-terra-mae.herokuapp.com/) com o streamlit para fornecer informações chave dos programas do DPE. O app pode ser apresentado como um modelo para a construpção de um app após a construção do banco de dados. [link do repositório](https://github.com/marreapato/App_Revista_Terra_Mae_Modelo)
    
-    - Atividade: Escrever Ata da Terceira Reunião.
-      - Em Andamento...
+    - Atividade: Escrever Ata da Primeira Reunião com os diretores.
 
 
  
