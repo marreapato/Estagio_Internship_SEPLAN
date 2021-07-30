@@ -24,4 +24,4 @@
     - Project: Data and Information was gathered to create a unified database to facilitate the access to information of indicators and long term development of the state of Bahia.
       - One of the sources with date range between 2020/2021 was the Brazilian Magazine [Terra Mãe](https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web), made available by the government of the state of Bahia, an [app](https://revista-terra-mae.herokuapp.com/) of the magazine was developed to be used as a model app for a posterior project. [Repo Link](https://github.com/marreapato/App_Revista_Terra_Mae_Modelo)
    
-    - Project: Write Report about the First Meeting with Directors to discuss the Database Project.
+    - Project: Write Report about the First Meeting With Directors to Discuss the Database Project.
