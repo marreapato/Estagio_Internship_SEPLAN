@@ -69,3 +69,19 @@ ax2.yaxis.set_major_locator(ticker.MultipleLocator(10))
 
 # Need to turn the grid on ax2 off, otherwise the gridlines end up on top of the bars
 ax2.grid(None)
+
+################################################################
+
+#Indicador de Eficácia das Metas (EXM) dos Programas 
+
+table2 = tabula.read_pdf('relatorio_adp_v_final_ano_1_30042021_1042.pdf', pages="21-22")
+
+
+#removendo linhas
+table2[0]=table2[0].drop(table2[0].index[[0]])
+table2[0].columns=['Programa','ExOFP (%)','Grau de Execução', 'Classificação da Execução']
+
+table2[0].iloc[8,0]='307 ‐ Igualdade Racial, Povos e Comunidades Tradicionais'
+table2[0]=table2[0].drop(table2[0].index[[7]])
+
+#removendo colunas
