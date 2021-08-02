@@ -29,6 +29,6 @@ table.iloc[:,1]=pd.to_numeric(table.iloc[:,1], errors='coerce')
 table.describe()
 
 #indicador de eficacia das metas em media em 56.79%
-#1/4 dos indicadores em ate 48,07¢ de eficacia
+#1/4 dos indicadores em ate 48,07% de eficacia
 #valor maximo de 80,30% de eficacia
 
