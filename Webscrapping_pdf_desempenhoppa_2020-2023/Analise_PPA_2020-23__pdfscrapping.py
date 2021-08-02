@@ -90,3 +90,8 @@ table2[1]=table2[1].drop(table2[1].columns[[2,4,5,7]],axis=1)
 table2[1].columns=['Programa','ExOFP (%)','Grau de Execução', 'Classificação da Execução']
 
 table2[1].loc[7] = ['308 ‐ Inclusão Socioprodutiva e Mundo do Trabalho','61,11','3','Bom']  # adding a row
+
+#concatenando linhas
+
+table2=pd.concat(table2, keys=['Programa','ExOFP (%)','Grau de Execução', 'Classificação da Execução'],ignore_index=True)
+
