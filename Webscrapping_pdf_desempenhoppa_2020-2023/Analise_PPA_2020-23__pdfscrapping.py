@@ -85,3 +85,8 @@ table2[0].iloc[8,0]='307 ‐ Igualdade Racial, Povos e Comunidades Tradicionais'
 table2[0]=table2[0].drop(table2[0].index[[7]])
 
 #removendo colunas
+
+table2[1]=table2[1].drop(table2[1].columns[[2,4,5,7]],axis=1)
+table2[1].columns=['Programa','ExOFP (%)','Grau de Execução', 'Classificação da Execução']
+
+table2[1].loc[7] = ['308 ‐ Inclusão Socioprodutiva e Mundo do Trabalho','61,11','3','Bom']  # adding a row
