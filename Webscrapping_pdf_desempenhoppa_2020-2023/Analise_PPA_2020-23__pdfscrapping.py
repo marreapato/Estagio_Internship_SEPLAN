@@ -19,3 +19,16 @@ table = tabula.read_pdf('relatorio_adp_v_final_ano_1_30042021_1042.pdf', pages="
 table=table[0]
 
 table.iloc[6,0]='306 – Educação'
+
+
+#Mudar Virgula por ponto
+table.iloc[:,1]=table.iloc[:,1].str.replace(',','.')
+
+
+table.iloc[:,1]=pd.to_numeric(table.iloc[:,1], errors='coerce')
+table.describe()
+
+#indicador de eficacia das metas em media em 56.79%
+#1/4 dos indicadores em ate 48,07¢ de eficacia
+#valor maximo de 80,30% de eficacia
+
