@@ -95,3 +95,14 @@ table2[1].loc[7] = ['308 ‐ Inclusão Socioprodutiva e Mundo do Trabalho','61,1
 
 table2=pd.concat(table2, keys=['Programa','ExOFP (%)','Grau de Execução', 'Classificação da Execução'],ignore_index=True)
 
+
+table2.iloc[6,0]='306 – Educação'
+
+#Mudar Virgula por ponto
+table2.iloc[:,1]=table2.iloc[:,1].str.replace(',','.')
+
+
+table2.iloc[:,1]=pd.to_numeric(table2.iloc[:,1], errors='coerce')
+table2.describe()
+
+#media do do indicador de execução orcamentaria é de 42.72% ou seja, em média os programas tiveram uma execução financeira regular
