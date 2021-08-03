@@ -13,11 +13,10 @@
     - Atividade: Escrever Ata da Primeira Reunião do Projeto de Banco de Dados com os diretores.
      
     - Atividade: Monitorar cronograma do projeto.
-
-
-
-
- 
+  
+    - Atividade: Coleta de dados Utilizando PDF Scraping dos Dados do RELATÓRIO DE AVALIAÇÃO DE DESEMPENHO DOS PROGRAMAS DO PPA 2020-2023. 
+      - Feita apresentação em Power Point de alguns dos pontos importantes e resumidos encontrados no relatório.
+   
  - Repository containing all Projects built in my internship at SEPLAN(BA) - Secretary Of Planning Of The State Of Bahia
       - Project: Descriptive Summary and Analysis of the DPE's Reviewed Database of indicators of the PluriAnual Plan (goals to achieve in 4 years).
         - A few modifications in the database were made with Python, Excel was initially used but it wasn't the main tool, so it wan't necessary to keep them, going back to the original database to work in a descriptive analysis with Python, Tableau and Power Point. Later the indicators with pending reunion were collected, resulting in a .html file product with a treemap interactive graph built with Python's library Plotly.
