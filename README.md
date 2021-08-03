@@ -2,7 +2,7 @@
 
  - Repositório com projetos feitos no estágio da SEPLAN(BA) - Secretaria de Planejamento do Estado da Bahia 
    - Atividade: Resumo Descritivo e Análise da Base de Dados Revisada dos índices Plano PluriAnual
-      - Inicialmente algumas modificações foram auxiliadas pelo Python, a modificação inicial ocorreu pelo Excel, mas não foi necessário mantê-las, retornando para a base original para realização do resumo descritivo realizado em Python, Tableau e Power Point. Após isso a apuração dos índices com reunião pendente foi aferida, retornando um produto para visualização destes dados como um arquivo .html de um gráfico interativo treemap realizado na biblioteca Plotly. 
+      - Inicialmente algumas modificações foram auxiliadas pelo Python, a modificação inicial ocorreu pelo Excel, mas não foi necessário mantê-las, retornando para a base original para realização do resumo descritivo realizado em Python, Tableau e Power Point. Após isso a apuração dos índices com reunião pendente foi aferida, retornando um produto para visualização destes dados como um arquivo .html de um gráfico interativo treemap realizado na biblioteca Plotly [link](https://github.com/marreapato/Estagio_Internship_SEPLAN/tree/main/Atividade_1). 
     
     - Atividade: Aplicativo Web Descritivo da Base de Dados Revisada dos índices Plano PluriAnual
       - Aplicativo feito em Python utilizando a biblioteca Streamlit para informar brevemente sobre o PPA 2020-2023 e para facilitar a criação de gráficos para análise da situação dos indicadores revisados do PPA, bem como dar acesso facilitado a base de dados fornecida pelo DPE. [Link do App](https://seplanba-informini.herokuapp.com/) e [Link do Repositório](https://github.com/marreapato/SeplanBA-Informini)
@@ -19,7 +19,7 @@
    
  - Repository containing all Projects built in my internship at SEPLAN(BA) - Secretary Of Planning Of The State Of Bahia
       - Project: Descriptive Summary and Analysis of the DPE's Reviewed Database of indicators of the PluriAnual Plan (goals to achieve in 4 years).
-        - A few modifications in the database were made with Python, Excel was initially used but it wasn't the main tool, so it wan't necessary to keep them, going back to the original database to work in a descriptive analysis with Python, Tableau and Power Point. Later the indicators with pending reunion were collected, resulting in a .html file product with a treemap interactive graph built with Python's library Plotly.
+        - A few modifications in the database were made with Python, Excel was initially used but it wasn't the main tool, so it wan't necessary to keep them, going back to the original database to work in a descriptive analysis with Python, Tableau and Power Point. Later the indicators with pending reunion were collected, resulting in a .html file product with a treemap interactive graph built with Python's library Plotly [link](https://github.com/marreapato/Estagio_Internship_SEPLAN/tree/main/Atividade_1).
     
     - Project: Web Descriptive App of the Web DPE's Reviewed Database of indicators of the PluriAnual Plan
       - App built with Python and its Streamlit package to briefly inform about the PPA 2020-2023 (PluriAnual Plan) and to make it easy to build graphs and to evaluate the situation of the reviewed indicators of the PPA 2020-2023, and to give easy access to the DPE's database [App's link](https://seplanba-informini.herokuapp.com/) and [Repo Link](https://github.com/marreapato/SeplanBA-Informini).
