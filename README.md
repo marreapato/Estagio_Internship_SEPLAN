@@ -1,6 +1,6 @@
 # Estagio Na SEPLAN (Secretaria de Planejamento do Estado Da Bahia) | Internship at SEPLAN (Secretary Of Planning Of The State Of Bahia)
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) 	![Windows 10](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) 	![Windows 10](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white) ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 
  - Repositório com projetos feitos no estágio da SEPLAN(BA) - Secretaria de Planejamento do Estado da Bahia 
    - Atividade: Resumo Descritivo e Análise da Base de Dados Revisada dos índices Plano PluriAnual
