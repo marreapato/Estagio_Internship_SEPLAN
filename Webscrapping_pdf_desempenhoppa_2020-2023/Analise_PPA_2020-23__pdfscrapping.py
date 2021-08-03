@@ -150,3 +150,7 @@ ax2.yaxis.set_major_locator(ticker.MultipleLocator(10))
 
 # Need to turn the grid on ax2 off, otherwise the gridlines end up on top of the bars
 ax2.grid(None)
+
+#merging 2 datasets
+
+table_full=pd.merge(left=table, right=table2, left_on='Programa', right_on='Programa')
