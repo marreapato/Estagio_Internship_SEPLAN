@@ -154,3 +154,47 @@ ax2.grid(None)
 #merging 2 datasets
 
 table_full=pd.merge(left=table, right=table2, left_on='Programa', right_on='Programa')
+
+
+
+############################################
+table_full.columns.values
+
+
+#Classificação do indicador de eficacia das metas por classificacao execução orçamentaria
+
+#Barplo
+ax=sns.countplot(table_full["Conceito"],palette="Set3",hue=table_full['Classificação da Execução'])  
+plt.ylabel('Quantidade')
+
+# Make twin axis
+ax2=ax.twinx()
+
+# Switch so count axis is on right, frequency on left
+ax2.yaxis.tick_left()
+ax.yaxis.tick_right()
+
+# Also switch the labels over
+ax.yaxis.set_label_position('right')
+ax2.yaxis.set_label_position('left')
+
+ax2.set_ylabel('Frequência [%]')
+ncount=16
+for p in ax.patches:
+    x=p.get_bbox().get_points()[:,0]
+    y=p.get_bbox().get_points()[1,1]
+    ax.annotate('{:.1f}%'.format(100.*y/ncount), (x.mean(), y), 
+            ha='center', va='bottom') # set the alignment of the text
+
+# Use a LinearLocator to ensure the correct number of ticks
+ax.yaxis.set_major_locator(ticker.LinearLocator(11))
+
+# Fix the frequency range to 0-100
+ax2.set_ylim(0,100)
+ax.set_ylim(0,ncount)
+
+# And use a MultipleLocator to ensure a tick spacing of 10
+ax2.yaxis.set_major_locator(ticker.MultipleLocator(10))
+
+# Need to turn the grid on ax2 off, otherwise the gridlines end up on top of the bars
+ax2.grid(None)
