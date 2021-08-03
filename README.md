@@ -15,7 +15,7 @@
     - Atividade: Monitorar cronograma do projeto.
   
     - Atividade: Coleta de dados Utilizando PDF Scraping dos Dados do RELATÓRIO DE AVALIAÇÃO DE DESEMPENHO DOS PROGRAMAS DO PPA 2020-2023. 
-      - Feita apresentação em Power Point de alguns dos pontos importantes e resumidos encontrados no relatório.
+      - Feita apresentação em Power Point de alguns dos pontos importantes e resumidos encontrados no relatório [Link](https://github.com/marreapato/Estagio_Internship_SEPLAN/tree/main/Webscrapping_pdf_desempenhoppa_2020-2023).
    
  - Repository containing all Projects built in my internship at SEPLAN(BA) - Secretary Of Planning Of The State Of Bahia
       - Project: Descriptive Summary and Analysis of the DPE's Reviewed Database of indicators of the PluriAnual Plan (goals to achieve in 4 years).
@@ -32,4 +32,4 @@
     - Project: Watch and Update The DataBase Project's Timeline.
   
     - Project: PDF Scraping Data of the Report Of Evaluation Of Development Of The PPA 2020-2023 Programs. 
-      - A Power Point Presentation With Some of the Most Important Information was Carried Out.
+      - A Power Point Presentation With Some of the Most Important Information was Carried Out [Link](https://github.com/marreapato/Estagio_Internship_SEPLAN/tree/main/Webscrapping_pdf_desempenhoppa_2020-2023).
