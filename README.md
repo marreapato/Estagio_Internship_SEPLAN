@@ -30,3 +30,6 @@
     - Project: Write Report about the First Meeting With Directors to Discuss the Database Project.
   
     - Project: Watch and Update The DataBase Project's Timeline.
+  
+    - Project: PDF Scraping Data of the Report Of Evaluation Of Development Of The PPA 2020-2023 Programs. 
+      - A Power Point Presentation With Some of the Most Important Information was Carried Out.
