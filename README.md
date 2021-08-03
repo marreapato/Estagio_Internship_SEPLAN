@@ -10,7 +10,7 @@
       - Aplicativo feito em Python utilizando a biblioteca Streamlit para informar brevemente sobre o PPA 2020-2023 e para facilitar a criação de gráficos para análise da situação dos indicadores revisados do PPA, bem como dar acesso facilitado a base de dados fornecida pelo DPE. [Link do App](https://seplanba-informini.herokuapp.com/) e [Link do Repositório](https://github.com/marreapato/SeplanBA-Informini)
    
     - Atividade: Coleta de dados e informações para criação de base de dados unificada, com intuito de facilitar análise dos indicadores e desenvolvimento de longo prazo do estado da Bahia.
-      - Uma das fontes utilizadas em 2020/2021 sendo a [Revista Terra Mãe](https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web), em que foi desenvolvido um [aplicativo](https://revista-terra-mae.herokuapp.com/) com o streamlit para fornecer informações chave dos programas do DPE. O app pode ser apresentado como um modelo para a construpção de um app após a construção do banco de dados. [link do repositório](https://github.com/marreapato/App_Revista_Terra_Mae_Modelo)
+      - Uma das fontes utilizadas em 2020/2021 sendo a [Revista Terra Mãe](https://issuu.com/abahiamudoupramim/docs/revsta_terra_mae_2020_web), em que foi desenvolvido um [aplicativo](https://revista-terra-mae.herokuapp.com/) com o streamlit para fornecer informações chave dos programas do DPE. O app pode ser apresentado como um modelo para a construção de um app após a construção do banco de dados. [link do repositório](https://github.com/marreapato/App_Revista_Terra_Mae_Modelo)
    
     - Atividade: Escrever Ata da Primeira Reunião do Projeto de Banco de Dados com os diretores.
      
