@@ -29,4 +29,4 @@
    
     - Project: Write Report about the First Meeting With Directors to Discuss the Database Project.
   
-    - Project: Watch and Update Project's Timeline.
+    - Project: Watch and Update The DataBase Project's Timeline.
