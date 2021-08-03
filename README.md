@@ -1,5 +1,7 @@
 # Estagio Na SEPLAN (Secretaria de Planejamento do Estado Da Bahia) | Internship at SEPLAN (Secretary Of Planning Of The State Of Bahia)
 
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
  - Repositório com projetos feitos no estágio da SEPLAN(BA) - Secretaria de Planejamento do Estado da Bahia 
    - Atividade: Resumo Descritivo e Análise da Base de Dados Revisada dos índices Plano PluriAnual
       - Inicialmente algumas modificações foram auxiliadas pelo Python, a modificação inicial ocorreu pelo Excel, mas não foi necessário mantê-las, retornando para a base original para realização do resumo descritivo realizado em Python, Tableau e Power Point. Após isso a apuração dos índices com reunião pendente foi aferida, retornando um produto para visualização destes dados como um arquivo .html de um gráfico interativo treemap realizado na biblioteca Plotly [link](https://github.com/marreapato/Estagio_Internship_SEPLAN/tree/main/Atividade_1). 
