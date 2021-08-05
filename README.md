@@ -18,6 +18,11 @@
   
     - Atividade: Coleta de dados Utilizando PDF Scraping dos Dados do [RELATÓRIO DE AVALIAÇÃO DE DESEMPENHO DOS PROGRAMAS DO PPA 2020-2023](http://www.seplan.ba.gov.br/arquivos/File/avaliacao_do_PPA/2020/relatorio_adp_v_final_ano_1_30042021_1042.pdf). 
       - Feita apresentação em Power Point de alguns dos pontos importantes e resumidos encontrados no relatório [Link](https://github.com/marreapato/Estagio_Internship_SEPLAN/tree/main/Webscrapping_pdf_desempenhoppa_2020-2023).
+
+   
+    - Atividade: Mapa Interativo das Metas de Segurança Por Território de Identidade do Estado Da Bahia.
+      - Coleta de dados no SEPEGE, no sistema de informações [Oracle BI](https://novo.apoioadecisao.ba.gov.br/analytics/saw.dll?PortalPages), para então realizar um mapa interativo do estado da bahia, o programa foi finalizado como um .html file.
+   
    
  - Repository containing all Projects built in my internship at SEPLAN(BA) - Secretary Of Planning Of The State Of Bahia
       - Project: Descriptive Summary and Analysis of the DPE's Reviewed Database of indicators of the PluriAnual Plan (goals to achieve in 4 years).
