@@ -20,8 +20,8 @@
       - Feita apresentação em Power Point de alguns dos pontos importantes e resumidos encontrados no relatório [Link](https://github.com/marreapato/Estagio_Internship_SEPLAN/tree/main/Webscrapping_pdf_desempenhoppa_2020-2023).
 
    
-    - Atividade: Mapa Interativo das Metas de Segurança Por Território de Identidade do Estado Da Bahia.
-      - Coleta de dados no SEPEGE, no sistema de informações [Oracle BI](https://novo.apoioadecisao.ba.gov.br/analytics/saw.dll?PortalPages), para então realizar um mapa interativo do estado da bahia, o programa foi finalizado como um .html file.
+    - Atividade: Mapas Interativos das Metas de Segurança e de Infraestrutura Por Território de Identidade do Estado Da Bahia no PPA 2020-2023.
+      - Coleta de dados no SEPEGE, no sistema de informações [Oracle BI](https://novo.apoioadecisao.ba.gov.br/analytics/saw.dll?PortalPages), para então realizar mapas interativo do estado da bahia, o programa foi finalizado como arquivos .html dos mapas criados.
    
    
  - Repository containing all Projects built in my internship at SEPLAN(BA) - Secretary Of Planning Of The State Of Bahia
