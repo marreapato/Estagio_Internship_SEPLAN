@@ -1,4 +1,4 @@
-# Estagio Na SEPLAN (Secretaria de Planejamento do Estado Da Bahia) | Internship at SEPLAN (Secretary Of Planning Of The State Of Bahia)
+# Estagio Na SEPLAN (Secretaria de Planejamento do Estado Da Bahia)
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) 	![Windows 10](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![Microsoft PowerPoint](https://img.shields.io/badge/Microsoft_PowerPoint-B7472A?style=for-the-badge&logo=microsoft-powerpoint&logoColor=white) ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 
@@ -26,7 +26,8 @@
 
    - Atividade: Coletas de Fontes provedoras de dados com metas em comum dos programas da SPE (Superintendência de Estudos Estratégicos).   
    
-   
+# Internship at SEPLAN (Secretary Of Planning Of The State Of Bahia)
+ 
  - Repository containing all Projects built in my internship at SEPLAN(BA) - Secretary Of Planning Of The State Of Bahia
       - Project: Descriptive Summary and Analysis of the DPE's Reviewed Database of indicators of the PluriAnual Plan (goals to achieve in 4 years).
         - A few modifications in the database were made with Python, Excel was initially used but it wasn't the main tool, so it wan't necessary to keep them, going back to the original database to work in a descriptive analysis with Python, [Tableau](https://public.tableau.com/app/profile/lucas.rabelo/viz/Situao_Reunio_Indicadores_Seplan/Planilha2) and Power Point. Later the indicators with pending reunion were collected, resulting in a .html file product with a treemap interactive graph built with Python's library Plotly [link](https://github.com/marreapato/Estagio_Internship_SEPLAN/tree/main/Atividade_1).
