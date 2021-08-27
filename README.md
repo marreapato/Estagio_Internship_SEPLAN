@@ -48,4 +48,4 @@
     - Project: Interactive Maps of the Public Security and Infrastructure Goals By Identity Territory Of The State Of Bahia in the PPA 2020-2023.
       - Data was colected in SEPEGE'S Information System [Oracle BI](https://novo.apoioadecisao.ba.gov.br/analytics/saw.dll?PortalPages), To built Interactive Maps Of The State Of Bahia, the interactive maps where saved as .html files.  
 
-    - Project: Gather Data Sources for the SPE's unified DataBase Project.
+    - Project: Gather Data Sources with common demands for the SPE's unified DataBase Project.
