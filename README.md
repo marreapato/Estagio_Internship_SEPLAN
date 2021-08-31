@@ -25,6 +25,8 @@
 
 
    - Atividade: Coletas de Fontes provedoras de dados com metas em comum dos programas da SPE (Superintendência de Estudos Estratégicos).   
+
+https://janakiev.com/blog/python-google-analytics/
    
 # Internship at SEPLAN (Secretary Of Planning Of The State Of Bahia)
  
